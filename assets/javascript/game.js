@@ -8,11 +8,6 @@ $(document).ready(function() {
             0
         ],
 
-        // Creates a value for a gem or the winner.
-        getValue: function(min, interval) {
-            return Math.floor(Math.random() * interval) + min;
-        },
-
         // Checks the value of the gems to make sure that they're all different.
         checkValue: function(index) {
             // Compares the value of the gem to the other ones to make sure they aren't the same
@@ -25,17 +20,6 @@ $(document).ready(function() {
             return true;
         },
 
-        // Creates the value for the gems
-        generateValues: function() {
-            // Creates a value for the gem and makes sure they're all different.
-            $(this.gems).each(function(key, value) {
-                do {
-                    crystals.gems[key] = crystals.getValue(1, 12);
-                }
-                while (!(crystals.checkValue(key)))
-            });
-        },
-
         // Resets the game.
         resetGame: function() {
             // Sets all of the crystal values to 0.
@@ -44,10 +28,16 @@ $(document).ready(function() {
             });
 
             // Generates new values for the crystals
-            this.generateValues();
+            $(this.gems).each(function(key, value) {
+                do {
+                    crystals.gems[key] = Math.floor(Math.random() * 12) + 1;
+                }
+                // Makes sure that all the values are different.
+                while (!(crystals.checkValue(key)))
+            });
 
             // Generates a new winning number.
-            $("#winner").text(this.getValue(19, (120-19)));
+            $("#winner").text(Math.floor(Math.random() * (120-19)) + 19);
 
             // Resets the score to 0
             $("#current-score").text(0);
