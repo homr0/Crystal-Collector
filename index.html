@@ -21,6 +21,8 @@
             <div class="container">
                 <div class="row" id="instructions">
                     <div class="col">
+                        <h2>Instructions</h2>
+
                         <p>You will be given a random number at the start of the game.</p>
 
                         <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
@@ -33,21 +35,45 @@
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col btn m-1 p-2 bg-warning crystal" id="crystal1">
+                <div class="row" id="victory">
+                    <div class="col-12 col-md-6 text-center score">
+                        <h2 id="winner">0</h2>
+                    </div>
+
+                    <div class="col-12 col-md-3">
+                        <p>Wins: <span id="win">0</span></p>
+
+                        <p>Losses: <span id="lose">0</span></p>
+                    </div>
+                </div>
+
+                <div class="row" id="crystals">
+                    <div class="col btn m-1 p-2 bg-warning crystal" value="0" id="crystal1">
                         <img src="assets/images/sapphire.svg" alt="Sapphire">
                     </div>
 
-                    <div class="col btn m-1 p-2 bg-warning crystal" id="crysta2">
+                    <div class="col btn m-1 p-2 bg-warning crystal" value="1" id="crysta2">
                         <img src="assets/images/ruby.svg" alt="Ruby">
                     </div>
 
-                    <div class="col btn m-1 p-2 bg-warning crystal" id="crystal3">
+                    <div class="col btn m-1 p-2 bg-warning crystal" value="2" id="crystal3">
                         <img src="assets/images/emerald.svg" alt="Emerald">
                     </div>
 
-                    <div class="col btn m-1 p-2 bg-warning crystal" id="crystal4">
+                    <div class="col btn m-1 p-2 bg-warning crystal" value="3" id="crystal4">
                         <img src="assets/images/diamond.svg" alt="Diamond">
+                    </div>
+                </div>
+
+                <div class="row" id="scoreboard">
+                    <div class="col-12">
+                        <p>Your total score is:</p>
+    
+                        <div class="row">
+                            <div class="col-12 score">
+                                <h2 id="current-score">0</h2>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
