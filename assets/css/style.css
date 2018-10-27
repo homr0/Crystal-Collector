@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen|Poppins');
+
+body {
+    font-family: "Oxygen", Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url('../images/rockywall.png');
+    color: rgba(31, 31, 31, 0.9);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header, footer {
+    background-color: rgba(204, 189, 20, 0.75);
+}
+
+#instructions {
+    background-color: rgba(255, 63, 127, 0.5);
+}
+
+#scoreboard .score {
+    font-size: 200%;
+    background-color: rgba(204, 189, 20, 0.6);
+}
+
+#scoreboard, #crystals .crystal {
+    background-color: rgba(153, 61, 92, 0.3)
+}
+
+#crystals .crystal:hover {
+    background-color: rgba(153, 61, 92, 0.5);
+}

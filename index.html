@@ -12,16 +12,16 @@
 
     <body>
         <header>
-            <div class="container">
-                <h1 class="text-center bg-info py-2">Crystals Collector!</h1>
+            <div class="container m-0 mw-100">
+                <h1 class="text-center p-3">Crystals Collector!</h1>
             </div>
         </header>
 
         <main id="game">
-            <div class="container">
-                <div class="row" id="instructions">
-                    <div class="col">
-                        <h2>Instructions</h2>
+            <div class="container my-3">
+                <div class="row p-4 my-3" id="instructions">
+                    <div class="col-12">
+                        <h2 class="text-center">Instructions</h2>
 
                         <p>You will be given a random number at the start of the game.</p>
 
@@ -35,50 +35,40 @@
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-12 col-md-8">
-                        <div class="row" id="victory">
-                            <div class="col-12 col-md-6 text-center score">
-                                <h2 id="winner">0</h2>
-                            </div>
-        
-                            <div class="col-12 col-md-3">
-                                <p>Wins: <span id="win">0</span></p>
-        
-                                <p>Losses: <span id="lose">0</span></p>
-                            </div>
-                        </div>
+                <div class="row text-center p-4" id="scoreboard">
+                    <div class="col-4 text-center score">
+                        <h2 class="pt-2">Goal</h2>
+
+                        <p id="winner">0</p>
                     </div>
 
-                    <div class="col-12 col-md-4">
-                        <div class="row" id="scoreboard">
-                            <div class="col-12">
-                                <p>Your total score is:</p>
-            
-                                <div class="row">
-                                    <div class="col-12 score">
-                                        <h2 id="current-score">0</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col text-center p-3">
+                        <p>Wins: <span id="win">0</span></p>
+
+                        <p>Losses: <span id="lose">0</span></p>                        
+                    </div>
+
+                    <div class="col-4 score">
+                        <h2 class="pt-2">Score</h2>
+
+                        <p id="current-score">0</h2>
                     </div>
                 </div>
 
-                <div class="row" id="crystals">
-                    <div class="col btn m-1 p-2 bg-warning crystal" value="0" id="crystal1">
+                <div class="row my-3" id="crystals">
+                    <div class="col btn m-1 p-2 crystal" value="0" id="crystal1">
                         <img src="assets/images/sapphire.svg" alt="Sapphire">
                     </div>
 
-                    <div class="col btn m-1 p-2 bg-warning crystal" value="1" id="crysta2">
+                    <div class="col btn m-1 p-2 crystal" value="1" id="crysta2">
                         <img src="assets/images/ruby.svg" alt="Ruby">
                     </div>
 
-                    <div class="col btn m-1 p-2 bg-warning crystal" value="2" id="crystal3">
+                    <div class="col btn m-1 p-2 crystal" value="2" id="crystal3">
                         <img src="assets/images/emerald.svg" alt="Emerald">
                     </div>
 
-                    <div class="col btn m-1 p-2 bg-warning crystal" value="3" id="crystal4">
+                    <div class="col btn m-1 p-2 crystal" value="3" id="crystal4">
                         <img src="assets/images/diamond.svg" alt="Diamond">
                     </div>
                 </div>
@@ -86,8 +76,8 @@
         </main>
 
         <footer>
-            <div class="container">
-                <p class="text-center m-0">Copyright &copy;</p>
+            <div class="container m-0 mw-100">
+                <p class="text-center m-0 p-3">Copyright &copy;</p>
             </div>
         </footer>
 
