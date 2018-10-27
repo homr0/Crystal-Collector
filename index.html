@@ -13,7 +13,7 @@
     <body>
         <header>
             <div class="container">
-                <h1 class="text-center">Crystals Collector!</h1>
+                <h1 class="text-center bg-info py-2">Crystals Collector!</h1>
             </div>
         </header>
 
@@ -35,15 +35,33 @@
                     </div>
                 </div>
 
-                <div class="row" id="victory">
-                    <div class="col-12 col-md-6 text-center score">
-                        <h2 id="winner">0</h2>
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <div class="row" id="victory">
+                            <div class="col-12 col-md-6 text-center score">
+                                <h2 id="winner">0</h2>
+                            </div>
+        
+                            <div class="col-12 col-md-3">
+                                <p>Wins: <span id="win">0</span></p>
+        
+                                <p>Losses: <span id="lose">0</span></p>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="col-12 col-md-3">
-                        <p>Wins: <span id="win">0</span></p>
-
-                        <p>Losses: <span id="lose">0</span></p>
+                    <div class="col-12 col-md-4">
+                        <div class="row" id="scoreboard">
+                            <div class="col-12">
+                                <p>Your total score is:</p>
+            
+                                <div class="row">
+                                    <div class="col-12 score">
+                                        <h2 id="current-score">0</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -62,18 +80,6 @@
 
                     <div class="col btn m-1 p-2 bg-warning crystal" value="3" id="crystal4">
                         <img src="assets/images/diamond.svg" alt="Diamond">
-                    </div>
-                </div>
-
-                <div class="row" id="scoreboard">
-                    <div class="col-12">
-                        <p>Your total score is:</p>
-    
-                        <div class="row">
-                            <div class="col-12 score">
-                                <h2 id="current-score">0</h2>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
